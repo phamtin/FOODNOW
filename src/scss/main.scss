@@ -1,0 +1,19 @@
+// 0 - Vendors
+@import "node_modules/slick-carousel/slick/slick.scss";
+
+// 1 - Abtracts
+@import "abtract/_mixins";
+@import "abtract/_vars";
+
+// 2 - Bases
+@import "base/_global";
+
+// 3 - Components
+@import "components/_button";
+
+// 4 - Layouts
+@import "layout/_header";
+@import "layout/_footer";
+
+// 5 - pages
+@import "pages/_home";

@@ -1,0 +1,18 @@
+.header {
+  background-color: $color-red;
+  height: 50px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 30px;
+  }
+
+  &__wrap-auth {
+    display: flex;
+  }
+}
