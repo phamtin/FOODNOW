@@ -1,0 +1,82 @@
+.tag-food {
+  width: 150px;
+  height: 200px;
+  color: $color-light;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.15s ease-in;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+
+  &--blue {
+    background-color: $color-blue;
+
+    &:hover {
+      border-bottom: 3px solid darken($color: $color-blue, $amount: 10%);
+      box-shadow: 0 9px 12px $color-blue;
+    }
+  }
+  &--yellow {
+    background-color: $color-yellow;
+
+    &:hover {
+      border-bottom: 3px solid darken($color: $color-yellow, $amount: 10%);
+      box-shadow: 0 9px 12px $color-yellow;
+    }
+  }
+  &--red {
+    background-color: $color-red;
+
+    &:hover {
+      border-bottom: 3px solid darken($color: $color-red, $amount: 10%);
+      box-shadow: 0 9px 12px $color-red;
+    }
+  }
+
+  &__avatar {
+    height: 50%;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 0 10px;
+
+    @include breakpoint-down(tablet) {
+      padding: 0 5px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    justify-content: space-between;
+    font-size: $font-size-large;
+    text-transform: uppercase;
+
+    @include breakpoint-down(tablet) {
+      font-size: $font-size-base;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__location {
+    margin-bottom: 0;
+    font-size: $font-size-small;
+    line-height: 1.2;
+  }
+
+  @include breakpoint-down(tablet) {
+    width: 110px;
+    height: 160px;
+  }
+
+  @include breakpoint-down(tablet) {
+    width: 105px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,10 @@
+.tag {
+  padding: 5px 15px;
+  color: $color-light;
+  border-radius: 8px;
+  border: 1px solid $color-light;
+
+  @include breakpoint-down(tablet) {
+    display: none;
+  }
+}

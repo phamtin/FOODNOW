@@ -1,13 +1,77 @@
-include ./components/_footer.pug
-include ./components/_head.pug
-include ./components/_header.pug
+extends layout/_page-default
 
-doctype html
-html
+block head
   +head("Mansory")
-  body
-    +header()
-  
-    +footer()
 
-    script(src='../assets/js/main.js', type='text/javascript')
+block main
+  .banner
+    #modal modal
+    .container
+      .banner-wrap  
+        .banner__tag-section
+          .banner__tag-section-wrap
+            .banner__heading
+              h4.banner__heading-main  Đặt Đồ ăn, giao hàng từ 20'...
+              p.banner__heading-sub Có 3595 Địa Điểm Ở Đà Nẵng Từ 00:00 - 23:59  
+              .form-group
+                form
+                  input(type="text", placeholder="Tìm món ăn, địa chỉ, ...")
+                  button.banner__submit-btn(type="submit") 
+                    i.fas.fa-search
+            .banner__tags
+              +tag('All')
+              +tag('Đồ ăn')
+              +tag('Đồ uống')
+              +tag('Đồ chay')
+              +tag('Bánh kem')
+              +tag('Tráng miệng')
+              +tag('Homestay')
+              +tag('Vỉa hè')
+              +tag('Pizza/Burger')
+              +tag('Món gà')
+              +tag('món lẩu')
+              +tag('Sushi')
+              +tag('mì phở')
+              +tag('cơm hộp')
+            .banner__apps
+              h5.banner__heading-app Sử dụng App Now để có nhiều giảm giá <br> và trải nghiệm tốt hơn
+              .banner__app-market
+                a(href="https://apps.apple.com/us/app/deliverynow/id1137866760")
+                  img(src="assets/img/appStore.png", alt="app-store")
+                a(href="https://play.google.com/store/apps/details?id=com.deliverynow")
+                  img(src="assets/img/ggPlay.png", alt="google-play")
+        .banner__option-section
+          .banner__deliver
+            p.banner__category Đồ ăn &nbsp;&#8594;&nbsp;&nbsp;&nbsp;
+            p.banner__address Chọn địa chỉ giao hàng
+            span
+              i.fas.fa-chevron-right
+          .banner__panel
+            .banner__discount-bar
+              p Discount
+              a(href="") See all
+            .banner__tags-food
+              +tag-food({
+                linkImage:'pizza.png',
+                title: 'Pizza Pasta Danang',
+                location: 'A22 Ho Chi Minh Street',
+                tone:'blue'
+              })
+              +tag-food({
+                linkImage:'burger.jpg',
+                title: 'Burger Palette',
+                location: 'C2 Tran Phu Street',
+                tone:'yellow'
+              })
+              +tag-food({
+                linkImage:'wine.png',
+                title: 'Red Wine ',
+                location: 'FHome Danang',
+                tone:'red'
+              })
+            .banner__post 
+              .banner__post-avatar
+                img(src="assets/img/wine.png", alt="")
+              .banner__post-content
+                a(href="#")  Play Around With Your Cooking
+                p   2019 and still not over this recipe, let check it out and have well-known masterpieces.

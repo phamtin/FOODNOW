@@ -1,1 +1,179 @@
-<!DOCTYPE html><html><head><title>Mansory</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="assets/img/ch.png" rel="shortcut icon"><link href="./assets/css/main.css" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><script src="https://kit.fontawesome.com/802024e432.js" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script></head><body><div class="header"><nav class="container"><div class="header__wrap"><div class="header__wrap-links"><a href="http://now.vn"><img class="header__logo" src="assets/img/ch.png" alt="logo"></a><ul class="header__list"><li class="header__item"> Đồ ăn</li><li class="header__item"> Đồ uống</li><li class="header__item"> Món lẩu</li><li class="header__item"> Sushi</li></ul></div><div class="header__wrap-auth"><p>Hello, Tin</p><a href="http://now.vn"><i class="far fa-user"></i></a></div></div></nav></div><div class="footer"><p>footer</p></div><script src="../assets/js/main.js" type="text/javascript"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <title>Mansory</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="assets/img/ch.png" rel="shortcut icon" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <link href="./assets/css/main.css" rel="stylesheet" />
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script
+        type="text/javascript"
+        src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+      <script
+        src="https://kit.fontawesome.com/802024e432.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <a href="http://now.vn"
+              ><img src="assets/img/logo-now.png" alt="logo"/></a
+            ><i class="fas fa-bars js-show-navbar"></i>
+          </div>
+          <div class="header__wrap-links">
+            <ul class="header__list">
+              <li class="header__item"><a href="#"> Món lẩu</a></li>
+              <li class="header__item"><a href="#"> Pizza</a></li>
+              <li class="header__item"><a href="#"> Sushi</a></li>
+              <li class="header__item"><a href="#"> Trà sữa</a></li>
+            </ul>
+            <div class="header__wrap-auth">
+              <p class="header__user-name">Hello, Tin</p>
+              <a href="https://www.facebook.com/tin.pham.3994"
+                ><i class="far fa-user"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div id="modal">modal</div>
+      <div class="container">
+        <div class="banner-wrap">
+          <div class="banner__tag-section">
+            <div class="banner__tag-section-wrap">
+              <div class="banner__heading">
+                <h4 class="banner__heading-main">
+                  Đặt Đồ ăn, giao hàng từ 20'...
+                </h4>
+                <p class="banner__heading-sub">
+                  Có 3595 Địa Điểm Ở Đà Nẵng Từ 00:00 - 23:59
+                </p>
+                <div class="form-group">
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="Tìm món ăn, địa chỉ, ..."
+                    /><button class="banner__submit-btn" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="banner__tags">
+                <div class="tag"><span>All</span></div>
+                <div class="tag"><span>Đồ ăn</span></div>
+                <div class="tag"><span>Đồ uống</span></div>
+                <div class="tag"><span>Đồ chay</span></div>
+                <div class="tag"><span>Bánh kem</span></div>
+                <div class="tag"><span>Tráng miệng</span></div>
+                <div class="tag"><span>Homestay</span></div>
+                <div class="tag"><span>Vỉa hè</span></div>
+                <div class="tag"><span>Pizza/Burger</span></div>
+                <div class="tag"><span>Món gà</span></div>
+                <div class="tag"><span>món lẩu</span></div>
+                <div class="tag"><span>Sushi</span></div>
+                <div class="tag"><span>mì phở</span></div>
+                <div class="tag"><span>cơm hộp</span></div>
+              </div>
+              <div class="banner__apps">
+                <h5 class="banner__heading-app">
+                  Sử dụng App Now để có nhiều giảm giá <br />
+                  và trải nghiệm tốt hơn
+                </h5>
+                <div class="banner__app-market">
+                  <a
+                    href="https://apps.apple.com/us/app/deliverynow/id1137866760"
+                    ><img src="assets/img/appStore.png" alt="app-store"/></a
+                  ><a
+                    href="https://play.google.com/store/apps/details?id=com.deliverynow"
+                    ><img src="assets/img/ggPlay.png" alt="google-play"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner__option-section">
+            <div class="banner__deliver">
+              <p class="banner__category">
+                Đồ ăn &nbsp;&#8594;&nbsp;&nbsp;&nbsp;
+              </p>
+              <p class="banner__address">Chọn địa chỉ giao hàng</p>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </div>
+            <div class="banner__panel">
+              <div class="banner__discount-bar">
+                <p>Discount</p>
+                <a href="">See all</a>
+              </div>
+              <div class="banner__tags-food">
+                <div class="tag-food tag-food--blue">
+                  <div class="tag-food__avatar">
+                    <a href="#"
+                      ><img src="assets/img/pizza.png" alt="pizza"
+                    /></a>
+                  </div>
+                  <div class="tag-food__content">
+                    <h6 class="tag-food__title">
+                      <strong>Pizza Pasta Danang</strong>
+                    </h6>
+                    <p class="tag-food__location">A22 Ho Chi Minh Street</p>
+                  </div>
+                </div>
+                <div class="tag-food tag-food--yellow">
+                  <div class="tag-food__avatar">
+                    <a href="#"
+                      ><img src="assets/img/burger.jpg" alt="pizza"
+                    /></a>
+                  </div>
+                  <div class="tag-food__content">
+                    <h6 class="tag-food__title">
+                      <strong>Burger Palette</strong>
+                    </h6>
+                    <p class="tag-food__location">C2 Tran Phu Street</p>
+                  </div>
+                </div>
+                <div class="tag-food tag-food--red">
+                  <div class="tag-food__avatar">
+                    <a href="#"><img src="assets/img/wine.png" alt="pizza"/></a>
+                  </div>
+                  <div class="tag-food__content">
+                    <h6 class="tag-food__title"><strong>Red Wine </strong></h6>
+                    <p class="tag-food__location">FHome Danang</p>
+                  </div>
+                </div>
+              </div>
+              <div class="banner__post">
+                <div class="banner__post-avatar">
+                  <img src="assets/img/wine.png" alt="" />
+                </div>
+                <div class="banner__post-content">
+                  <a href="#"> Play Around With Your Cooking</a>
+                  <p>
+                    2019 and still not over this recipe, let check it out and
+                    have well-known masterpieces.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,14 +1,249 @@
 // ======================================================
 // Pages :: Home
-// ======================================================
 
 .banner {
-  &__item {
-    position: relative;
-    text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../../assets/img/background.png");
+  background-size: cover;
+
+  .banner-wrap {
+    display: flex;
+    color: $color-light;
+
+    @include breakpoint-down(phone) {
+      display: block;
+    }
   }
 
-  &__text {
+  &__tag-section {
+    display: flex;
+    flex: 0 0 40%;
+    align-items: center;
+    height: 100vh;
+
+    @include breakpoint-down(phone) {
+      height: 440px;
+    }
+    @include breakpoint-down(smallphone) {
+      padding-top: 80px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 25px;
+  }
+
+  &__heading-main {
+    margin-bottom: 5px;
+
+    font-weight: $font-weight-bold;
+  }
+
+  &__heading-sub {
+    font-size: $font-size-medium;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    width: 99%;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 50px;
+    background-color: $color-blue;
+
+    i {
+      font-size: $font-size-large;
+      color: $color-light;
+    }
+  }
+
+  form {
+    display: flex;
+    background-color: $color-light;
+  }
+
+  input {
+    width: 85%;
+    height: 50px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    .tag {
+      margin-right: 15px;
+      margin-bottom: 14px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-dark-4;
+        background-color: $color-light;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__heading-app {
+    margin-bottom: 10px;
+    font-size: $font-size-large;
+    line-height: 1.5;
+  }
+
+  &__app-market {
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      @include breakpoint-down(tablet) {
+        width: 125px;
+      }
+    }
+  }
+
+  &__option-section {
+    flex: 0 0 57%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__deliver {
+    display: flex;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    color: $color-dark;
+    border-radius: 14px;
+    background-color: $color-light;
+    cursor: pointer;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    span {
+      margin-left: auto;
+    }
+  }
+
+  &__category {
+    color: $color-blue;
+    font-weight: $font-weight-bold;
+    color: darken($color: $color-blue, $amount: 15%);
+  }
+
+  &__panel {
+    padding: 10px 15px 20px 15px;
+    background-color: $color-light-1;
+    border-radius: 16px;
+    overflow: hidden;
+
+    @include breakpoint-down(smallphone) {
+      padding: 10px 10px 15px 10px;
+    }
+  }
+
+  &__discount-bar {
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    padding: 5px 0 20px 0;
+    color: $color-dark-3;
+
+    p {
+      font-weight: $font-weight-bold;
+    }
+
+    a {
+      color: darken($color-blue, 10%);
+    }
+
+    @include breakpoint-down(smallphone) {
+      padding: 1px 0 15px 0;
+    }
+  }
+
+  &__panel-main {
+    display: flex;
+  }
+
+  &__tags-food {
+    display: flex;
+    flex: 0 0 86%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+    @include breakpoint-down(desktop) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__post {
+    display: flex;
+    background-color: $color-light;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &__post-avatar {
+    flex: 0 0 45%;
+    border-radius: 15px;
+    overflow: hidden;
+
+    img {
+      max-height: 100%;
+    }
+
+    @include breakpoint-down(desktop) {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__post-content {
+    flex: 0 0 45%;
+    margin: auto auto auto;
+    padding: 0 15px;
+    color: $color-dark-4;
+
+    a {
+      display: block;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+
+      @include breakpoint-down(tablet) {
+        font-size: $font-size-base;
+      }
+      @include breakpoint-down(smallphone) {
+        font-size: $font-size-small;
+      }
+    }
+
+    p {
+      font-size: $font-size-small;
+      font-family: $font-text;
+      font-weight: $font-weight-bold;
+      line-height: 1.3;
+    }
   }
 }

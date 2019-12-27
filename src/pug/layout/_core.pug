@@ -1,0 +1,16 @@
+include ../components/_head.pug
+include ../components/_header.pug
+include ../components/_tag.pug
+include ../components/_tag-food.pug
+
+doctype html
+html(lang='en')
+  head
+    block head
+
+  body
+    block body
+
+    block scripts
+      script(src='assets/js/main.js',type="module")
+    

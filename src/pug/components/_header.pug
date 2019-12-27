@@ -1,16 +1,22 @@
 mixin header()
   .header
-    nav.container
+    .container
       .header__wrap
-        .header__wrap-links
+        .header__logo
           a(href="http://now.vn")
-            img.header__logo(src="assets/img/ch.png", alt="logo")
+            img(src="assets/img/logo-now.png", alt="logo")
+          i.fas.fa-bars.js-show-navbar
+        .header__wrap-links    
           ul.header__list
-            li.header__item  Đồ ăn
-            li.header__item  Đồ uống
-            li.header__item  Món lẩu
-            li.header__item  Sushi
-        .header__wrap-auth
-          p Hello, Tin
-          a(href="http://now.vn")
-            i.far.fa-user
+            li.header__item
+              a(href="#")  Món lẩu
+            li.header__item
+              a(href="#")  Pizza
+            li.header__item
+              a(href="#")  Sushi
+            li.header__item
+              a(href="#")  Trà sữa
+          .header__wrap-auth
+            p.header__user-name Hello, Tin
+            a(href="https://www.facebook.com/tin.pham.3994")
+              i.far.fa-user

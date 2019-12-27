@@ -1,0 +1,9 @@
+mixin tag-food({linkImage, title, location, tone})
+  div(class=`tag-food tag-food--${tone}`)
+    .tag-food__avatar
+      a(href="#")
+        img(src=`assets/img/${linkImage}`, alt="pizza")
+    .tag-food__content
+      h6.tag-food__title
+        strong= title
+      p.tag-food__location= location   

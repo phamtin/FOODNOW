@@ -6,7 +6,6 @@
   "scripts": {
     "start": "gulp default",
     "build": "gulp build",
-    "no-pug": "gulp no-pug",
     "help": "gulp help"
   },
   "author": "Riad Zejnilagic Trumic",
@@ -19,9 +18,12 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "jquery": "^3.3.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "slick-carousel": "^1.8.1"
   }
 }

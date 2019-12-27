@@ -13,14 +13,24 @@ img {
   vertical-align: middle;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
 a {
+  color: $color-dark-3;
   &:hover,
   &:focus,
   &:active {
     outline: 0;
     box-shadow: none;
     text-decoration: none;
-    color: $color-light-2;
   }
 }
 
@@ -30,11 +40,20 @@ ol {
   padding: 0;
 }
 
+input {
+  padding-left: 10px;
+}
+
 input,
 button {
+  border: 0;
   &:focus {
     outline: none;
   }
+}
+
+button {
+  background: none;
 }
 
 label {

@@ -1,19 +1,23 @@
 // 0 - Vendors
 @import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
 
 // 1 - Abtracts
-@import "abtract/_mixins";
-@import "abtract/_vars";
+@import "abtract/mixins";
+@import "abtract/vars";
 
 // 2 - Bases
-@import "base/_global";
+@import "bases/global";
 
 // 3 - Components
-@import "components/_button";
+@import "components/button";
+@import "components/tag-option";
+@import "components/tag-food";
+@import "components/modalDeliver";
 
 // 4 - Layouts
-@import "layout/_header";
-@import "layout/_footer";
+@import "layout/header";
+@import "layout/footer";
 
 // 5 - pages
-@import "pages/_home";
+@import "pages/home";

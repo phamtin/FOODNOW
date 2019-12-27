@@ -6,11 +6,13 @@ const uglify = require("gulp-uglify");
 const imageMin = require("gulp-imagemin");
 const concat = require("gulp-concat");
 const del = require("del");
+var plumber = require("gulp-plumber");
 
 // Compile Pug
 gulp.task("pug", () => {
   return gulp
     .src("src/pug/*.pug")
+    .pipe(plumber())
     .pipe(
       pug({
         doctype: "html",
@@ -23,7 +25,8 @@ gulp.task("pug", () => {
 // Compile sass & Inject Into Browser
 gulp.task("sass", () => {
   return gulp
-    .src(["src/scss/main.scss"])
+    .src(["src/scss/*.scss"])
+    .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest("src/assets/css"))
     .pipe(browserSync.stream());
@@ -61,6 +64,7 @@ gulp.task("imageMin", () => {
 gulp.task("scripts", () => {
   return gulp
     .src(["src/assets/js/*.js"])
+    .pipe(plumber())
     .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/assets/js"));
